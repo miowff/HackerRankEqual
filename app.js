@@ -16,13 +16,13 @@ function equal(arr)
          
             let difference = num - min;
             let fiveCount = parseInt(difference/5);
-            difference = difference - fiveCount * 5;
+            difference -= fiveCount * 5;
 
             let twoCount = parseInt(difference/2);
-            difference = difference - twoCount * 2;
+            difference -= twoCount * 2;
   
             let oneCount = parseInt(difference/1);
-            difference = difference - oneCount * 1; 
+            difference -= oneCount * 1; 
         
             operationsCount+= fiveCount+twoCount+oneCount;
         }
